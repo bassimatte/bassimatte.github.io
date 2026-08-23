@@ -222,8 +222,6 @@ h1 > span {
 .art-number, .art-caption { position: absolute; z-index: 3; color: rgba(244, 240, 232, 0.68); font: 9px var(--mono); letter-spacing: 0.12em; }
 .art-number { top: 21px; left: 22px; }
 .art-caption { bottom: 20px; left: 22px; }
-.project-open { position: absolute; z-index: 4; top: 18px; right: 18px; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(244, 240, 232, 0.42); border-radius: 50%; background: rgba(8, 8, 8, 0.72); font-size: 18px; }
-
 .art-mantice { background: radial-gradient(circle at 28% 42%, rgba(255, 102, 51, 0.29), transparent 25%), radial-gradient(circle at 72% 54%, rgba(129, 65, 171, 0.18), transparent 37%), #080605; }
 .mantice-waves { position: absolute; inset: 7% -14% 15%; transform: rotate(-8deg); }
 .mantice-waves span { position: absolute; left: 4%; width: 92%; height: 44%; border: 1px solid transparent; border-top-color: rgba(255, 131, 84, 0.77); border-radius: 50%; filter: drop-shadow(0 0 9px rgba(255, 102, 51, 0.32)); animation: mantice-drift 8s ease-in-out infinite alternate; }

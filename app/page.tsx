@@ -172,12 +172,11 @@ export default function Home() {
               <article className={`project-card project-${project.accent}`} id={project.name.toLowerCase()} key={project.name}>
                 <a className="project-media" href={project.live} target="_blank" rel="noreferrer" aria-label={`Open ${project.name}`}>
                   <ProjectArt name={project.name} number={project.number} />
-                  <span className="project-open" aria-hidden="true">↗</span>
                 </a>
                 <div className="project-body">
                   <div className="project-title-row">
                     <span className="project-number">{project.number}</span>
-                    <div><h3>{project.name}</h3><p className="project-kicker">{project.kicker}</p></div>
+                    <div><h3><a href={project.live} target="_blank" rel="noreferrer">{project.name}</a></h3><p className="project-kicker">{project.kicker}</p></div>
                   </div>
                   <p className="project-description">{project.description}</p>
                   <ul className="tag-list" aria-label={`${project.name} qualities`}>
