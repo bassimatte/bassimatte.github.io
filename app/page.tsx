@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const projects = [
   {
     number: "01",
@@ -9,8 +7,6 @@ const projects = [
       "A deep ambient instrument for building slowly evolving drones with FM, subtractive, granular and wavetable synthesis.",
     tags: ["Ambient", "Spatial", "Evolving"],
     accent: "orange",
-    image: "/projects/mantice.png",
-    imageAlt: "Mantice ambient drone synthesizer interface",
     live: "https://bassimatte.github.io/mantice/",
     code: "https://github.com/bassimatte/mantice",
   },
@@ -22,8 +18,6 @@ const projects = [
       "An organic sound generator that turns algorithms into strange, tactile audio—from insects and weather to sci-fi, foley and glitch.",
     tags: ["Generative", "Organic", "Playful"],
     accent: "cyan",
-    image: "/projects/glorb.png",
-    imageAlt: "Glorb organic sound generator interface",
     live: "https://bassimatte.github.io/glorb/",
     code: "https://github.com/bassimatte/glorb",
   },
@@ -35,8 +29,6 @@ const projects = [
       "A focused generative bell instrument for resonant, meditative patterns—somewhere between a struck object and an imagined place.",
     tags: ["Bells", "Resonance", "Infinite"],
     accent: "gold",
-    image: "/projects/campana.png",
-    imageAlt: "Campana generative bell instrument interface",
     live: "https://bassimatte.github.io/campana/",
     code: "https://github.com/bassimatte/campana",
   },
@@ -48,6 +40,39 @@ const wave = [
   92, 68, 38, 20, 30, 56, 78, 48, 26, 18, 36, 66, 84, 52, 32, 22, 42, 74,
   60, 34, 20, 28, 50, 76, 48, 28, 18, 34, 58, 40, 24, 16, 26, 44, 32, 18,
 ];
+
+function ProjectArt({ name, number }: { name: string; number: string }) {
+  const key = name.toLowerCase();
+
+  return (
+    <div className={`project-art art-${key}`} aria-hidden="true">
+      <span className="art-number">{number} / 03</span>
+      {key === "mantice" && (
+        <>
+          <div className="mantice-waves"><span /><span /><span /><span /></div>
+          <div className="mantice-spectrum">{Array.from({ length: 18 }, (_, index) => <i key={index} />)}</div>
+          <span className="art-caption">DRONE / CONTINUUM</span>
+        </>
+      )}
+      {key === "glorb" && (
+        <>
+          <div className="glorb-orbits"><span /><span /></div>
+          <div className="glorb-core" />
+          <div className="glorb-particles">{Array.from({ length: 18 }, (_, index) => <i key={index} />)}</div>
+          <span className="art-caption">PROCEDURE / EMERGENCE</span>
+        </>
+      )}
+      {key === "campana" && (
+        <>
+          <div className="campana-strike" />
+          <div className="campana-rings"><span /><span /><span /><span /><span /><span /></div>
+          <div className="campana-core" />
+          <span className="art-caption">STRIKE / DECAY</span>
+        </>
+      )}
+    </div>
+  );
+}
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -145,7 +170,7 @@ export default function Home() {
             {projects.map((project) => (
               <article className={`project-card project-${project.accent}`} id={project.name.toLowerCase()} key={project.name}>
                 <a className="project-media" href={project.live} target="_blank" rel="noreferrer" aria-label={`Open ${project.name}`}>
-                  <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 840px) 100vw, 50vw" />
+                  <ProjectArt name={project.name} number={project.number} />
                   <span className="project-open" aria-hidden="true">↗</span>
                 </a>
                 <div className="project-body">
