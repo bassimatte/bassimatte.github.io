@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bassimatte.github.io"),
-  title: "Matteo Bassi (bassimat) — Generative Audio & Field Recordings",
-  description: "Generative audio instruments, field recordings and open sound experiments by Matteo Bassi (bassimat), creator of Mantice, Glorb and Campana.",
-  keywords: ["Matteo Bassi", "bassimat", "generative audio", "sound design", "field recording", "ambient synthesizer", "Mantice", "Glorb", "Campana"],
+  title: "Matteo Bassi (bassimat) — Generative Instruments & Sound Transformation",
+  description: "Generative instruments and experimental sound transformation by Matteo Bassi (bassimat), creator of Mantice, Glorb and Campana.",
+  keywords: ["Matteo Bassi", "bassimat", "generative instruments", "experimental sound design", "sound transformation", "audio synthesis", "Mantice", "Glorb", "Campana"],
   authors: [{ name: "Matteo Bassi", url: "https://bassimatte.github.io/" }],
   creator: "Matteo Bassi",
   verification: {
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    title: "Matteo Bassi — Generative Audio & Field Recordings",
+    title: "Matteo Bassi — Generative Instruments & Sound Transformation",
     description: "Generative instruments and experimental sound transformation—following the unexpected.",
     siteName: "Matteo Bassi / bassimat",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Matteo Bassi — Generative Audio and Field Recordings" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Matteo Bassi — Generative Instruments and Sound Transformation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Matteo Bassi — Generative Audio & Field Recordings",
-    description: "Generative instruments, field recordings and open sound experiments.",
+    title: "Matteo Bassi — Generative Instruments & Sound Transformation",
+    description: "Generative instruments and experimental sound transformation—following the unexpected.",
     images: ["/og.png"],
   },
   robots: { index: true, follow: true },

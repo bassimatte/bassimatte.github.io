@@ -93,9 +93,9 @@ const structuredData = {
         "https://t.me/m1285b",
       ],
       knowsAbout: [
-        "Generative audio",
-        "Sound design",
-        "Field recording",
+        "Generative instruments",
+        "Experimental sound design",
+        "Sound transformation",
         "Audio synthesis",
       ],
     },
@@ -252,7 +252,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Generative audio · field recordings · open tools</p></div>
+        <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Generative instruments · sound transformation · open tools</p></div>
         <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
       </footer>
 
