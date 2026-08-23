@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --ink: #080808;
   --panel: #10100f;
@@ -182,7 +180,7 @@ h1 > span {
 .project-card:last-child { grid-column: 2; }
 .project-media { position: relative; display: block; aspect-ratio: 1.7 / 1; overflow: hidden; border-bottom: 1px solid var(--line); background: #050505; }
 .project-media::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 58%, rgba(0,0,0,0.7)); pointer-events: none; }
-.project-media img { object-fit: cover; object-position: top center; filter: saturate(0.9) contrast(1.06); transition: transform 500ms cubic-bezier(.2,.8,.2,1), filter 300ms ease; }
+.project-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: saturate(0.9) contrast(1.06); transition: transform 500ms cubic-bezier(.2,.8,.2,1), filter 300ms ease; }
 .project-media:hover img { transform: scale(1.025); filter: saturate(1.1) contrast(1.06); }
 .project-gold .project-media { background: radial-gradient(circle at 50% 35%, rgba(217, 166, 46, 0.16), transparent 42%), #0a0907; }
 .project-gold .project-media img { object-fit: contain; padding: 20px; }
