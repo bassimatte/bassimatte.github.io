@@ -61,7 +61,9 @@ const structuredData = {
       sameAs: [
         "https://github.com/bassimatte",
         "https://freesound.org/people/bassimat/",
+        "https://t.me/m1285b",
       ],
+      email: "bassi.matteo@gmail.com",
       knowsAbout: [
         "Generative audio",
         "Sound design",
@@ -98,6 +100,7 @@ export default function Home() {
           <a href="#instruments">Instruments</a>
           <a href="#sounds">Sounds</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
         <a className="header-link" href="https://github.com/bassimatte" target="_blank" rel="noreferrer">
           GitHub <span aria-hidden="true">↗</span>
@@ -193,6 +196,31 @@ export default function Home() {
                 <a href="https://github.com/bassimatte" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 <a href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Freesound <span aria-hidden="true">↗</span></a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="contact-section" id="contact">
+          <p className="section-number">04 — CONTACT</p>
+          <div className="contact-grid">
+            <div className="contact-copy">
+              <h2>Say hello.</h2>
+              <p>
+                Questions, feedback, collaboration—or simply a conversation
+                about sound. Write by email or find me on Telegram.
+              </p>
+            </div>
+            <div className="contact-actions">
+              <a className="contact-card contact-email" href="mailto:bassi.matteo@gmail.com">
+                <span className="contact-label">Email</span>
+                <strong>bassi.matteo@gmail.com</strong>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a className="contact-card contact-telegram" href="https://t.me/m1285b" target="_blank" rel="noreferrer">
+                <span className="contact-label">Telegram</span>
+                <strong>@m1285b</strong>
+                <i aria-hidden="true">↗</i>
+              </a>
             </div>
           </div>
         </section>
