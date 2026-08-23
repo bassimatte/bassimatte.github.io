@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bassimatte.github.io/sitemap.xml
+Sitemap: https://bassimatte.github.io/sitemap.txt
