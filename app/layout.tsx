@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   keywords: ["Matteo Bassi", "bassimat", "generative audio", "sound design", "field recording", "ambient synthesizer", "Mantice", "Glorb", "Campana"],
   authors: [{ name: "Matteo Bassi", url: "https://bassimatte.github.io/" }],
   creator: "Matteo Bassi",
+  verification: {
+    google: "pp3jhptIHkhnjku-p-0sm3J4XAJzQlE7WiNZ2JwKUNA",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
