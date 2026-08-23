@@ -137,7 +137,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Independent sound maker · Italy</p>
             <h1>Matteo Bassi<span>make sound from nothing.</span></h1>
-            <p className="hero-intro">Generative instruments, field recordings and open experiments for people who listen closely.</p>
+            <p className="hero-intro">Generative instruments and experimental sound transformation—following the unexpected.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#instruments">Explore the instruments <span aria-hidden="true">↓</span></a>
               <a className="button button-secondary" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Listen on Freesound <span aria-hidden="true">↗</span></a>

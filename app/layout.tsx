@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     title: "Matteo Bassi — Generative Audio & Field Recordings",
-    description: "Generative instruments, field recordings and open experiments for people who listen closely.",
+    description: "Generative instruments and experimental sound transformation—following the unexpected.",
     siteName: "Matteo Bassi / bassimat",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Matteo Bassi — Generative Audio and Field Recordings" }],
   },
