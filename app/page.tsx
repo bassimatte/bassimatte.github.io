@@ -66,9 +66,11 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
       )}
       {key === "campana" && (
         <>
-          <div className="campana-strike" />
-          <div className="campana-rings"><span /><span /><span /><span /><span /><span /></div>
-          <div className="campana-core" />
+          <div className="campana-bell">
+            <div className="campana-strike" />
+            <div className="campana-rings"><span /><span /><span /><span /><span /><span /></div>
+            <div className="campana-core" />
+          </div>
           <span className="art-caption">STRIKE / DECAY</span>
         </>
       )}
