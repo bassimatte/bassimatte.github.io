@@ -448,13 +448,13 @@ footer .footer-name { color: var(--paper); font-family: var(--sans); font-size: 
 @media (max-width: 760px) {
   .site-header { min-height: 68px; }
   .wordmark-handle { display: none; }
-  .hero { min-height: calc(100svh - 68px); padding-top: 78px; }
+  .hero { min-height: calc(100svh - 68px); padding-top: 78px; padding-bottom: 48px; }
   h1 { font-size: clamp(58px, 18vw, 92px); }
   h1 > span { max-width: 90%; margin-top: 0.3em; font-size: 0.56em; line-height: 1.05; }
   .hero-intro { max-width: 90%; margin-top: 36px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .button { width: 100%; }
-  .hero-signal { right: -18%; bottom: 4%; left: -18%; height: 170px; }
+  .hero-signal { position: relative; right: auto; bottom: auto; left: auto; width: calc(100% + 44px); height: 170px; margin: 46px -22px 0; }
   .section-heading { display: block; }
   .section-heading .section-number { margin-bottom: 28px; }
   .section-heading > p:last-child { max-width: 500px; margin-top: 26px; }
