@@ -63,7 +63,6 @@ const structuredData = {
         "https://freesound.org/people/bassimat/",
         "https://t.me/m1285b",
       ],
-      email: "bassi.matteo@gmail.com",
       knowsAbout: [
         "Generative audio",
         "Sound design",
@@ -102,16 +101,13 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="header-link" href="https://github.com/bassimatte" target="_blank" rel="noreferrer">
-          GitHub <span aria-hidden="true">↗</span>
-        </a>
       </header>
 
       <main id="main">
         <section className="hero" id="top">
           <div className="hero-copy">
             <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Independent sound maker · Italy</p>
-            <h1>Matteo Bassi<span>makes sound from nothing.</span></h1>
+            <h1>Matteo Bassi<span>make sound from nothing.</span></h1>
             <p className="hero-intro">Generative instruments, field recordings and open experiments for people who listen closely.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#instruments">Explore the instruments <span aria-hidden="true">↓</span></a>
@@ -211,11 +207,11 @@ export default function Home() {
               </p>
             </div>
             <div className="contact-actions">
-              <a className="contact-card contact-email" href="mailto:bassi.matteo@gmail.com">
+              <button className="contact-card contact-email" type="button" data-email-link="YmFzc2kubWF0dGVvQGdtYWlsLmNvbQ==" aria-label="Send Matteo Bassi an email">
                 <span className="contact-label">Email</span>
-                <strong>bassi.matteo@gmail.com</strong>
+                <strong>Send an email</strong>
                 <i aria-hidden="true">↗</i>
-              </a>
+              </button>
               <a className="contact-card contact-telegram" href="https://t.me/m1285b" target="_blank" rel="noreferrer">
                 <span className="contact-label">Telegram</span>
                 <strong>@m1285b</strong>
@@ -232,6 +228,7 @@ export default function Home() {
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script dangerouslySetInnerHTML={{ __html: `(function(){var b=document.querySelector('[data-email-link]');if(!b)return;b.addEventListener('click',function(){window.location.href='mailto:'+atob(b.getAttribute('data-email-link'));});})();` }} />
     </>
   );
 }

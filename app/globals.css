@@ -270,9 +270,16 @@ h1 > span {
   grid-template-columns: 100px minmax(0, 1fr) auto;
   gap: 22px;
   align-items: center;
+  width: 100%;
   min-height: 112px;
   padding: 24px 0;
+  border: 0;
   border-bottom: 1px solid var(--line-strong);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
   transition: color 180ms ease, padding 180ms ease;
 }
 
