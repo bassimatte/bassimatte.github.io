@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://bassimatte.github.io"),
   title: "Matteo Bassi (bassimat) — Generative Instruments & Sound Transformation",
-  description: "Generative instruments and experimental sound transformation by Matteo Bassi (bassimat), creator of Mantice, Glorb and Campana.",
-  keywords: ["Matteo Bassi", "bassimat", "generative instruments", "experimental sound design", "sound transformation", "audio synthesis", "Mantice", "Glorb", "Campana"],
+  description: "Generative instruments and experimental sound transformation by Matteo Bassi (bassimat), creator of Mantice, Glorb, Campana and Maresono.",
+  keywords: ["Matteo Bassi", "bassimat", "generative instruments", "experimental sound design", "sound transformation", "audio synthesis", "Mantice", "Glorb", "Campana", "Maresono"],
   authors: [{ name: "Matteo Bassi", url: "https://bassimatte.github.io/" }],
   creator: "Matteo Bassi",
   verification: {

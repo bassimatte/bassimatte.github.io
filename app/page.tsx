@@ -32,6 +32,17 @@ const projects = [
     live: "https://bassimatte.github.io/campana/",
     code: "https://github.com/bassimatte/campana",
   },
+  {
+    number: "04",
+    name: "Maresono",
+    kicker: "The sound of the sea",
+    description:
+      "A generative ocean sound engine that learns the spectral character of real ocean drums and resynthesizes infinite, never-repeating wave soundscapes.",
+    tags: ["Ocean", "Spectral", "Infinite"],
+    accent: "teal",
+    live: "https://bassimatte.github.io/maresono/",
+    code: "https://github.com/bassimatte/maresono",
+  },
 ];
 
 function HeroConstellation() {
@@ -48,7 +59,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
 
   return (
     <div className={`project-art art-${key}`} aria-hidden="true">
-      <span className="art-number">{number} / 03</span>
+      <span className="art-number">{number} / 04</span>
       {key === "mantice" && (
         <>
           <div className="mantice-waves"><span /><span /><span /><span /></div>
@@ -72,6 +83,13 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
             <div className="campana-core" />
           </div>
           <span className="art-caption">STRIKE / DECAY</span>
+        </>
+      )}
+      {key === "maresono" && (
+        <>
+          <div className="maresono-horizon" />
+          <div className="maresono-waves"><span /><span /><span /><span /><span /></div>
+          <span className="art-caption">SPECTRUM / TIDE</span>
         </>
       )}
     </div>
@@ -151,11 +169,12 @@ export default function Home() {
           </div>
 
           <div className="project-index" aria-label="Featured projects">
-            <span>THREE INSTRUMENTS</span>
+            <span>FOUR INSTRUMENTS</span>
             <ol>
               <li><a href="#mantice"><b>01</b> Mantice</a></li>
               <li><a href="#glorb"><b>02</b> Glorb</a></li>
               <li><a href="#campana"><b>03</b> Campana</a></li>
+              <li><a href="#maresono"><b>04</b> Maresono</a></li>
             </ol>
           </div>
         </section>
@@ -163,8 +182,8 @@ export default function Home() {
         <section className="projects-section" id="instruments">
           <div className="section-heading">
             <p className="section-number">01 — INSTRUMENTS</p>
-            <h2>Three ways into sound.</h2>
-            <p>Each instrument begins with a different question. All three are free, open source and ready to play in your browser.</p>
+            <h2>Four ways into sound.</h2>
+            <p>Each instrument begins with a different question. All four are free, open source and ready to play in your browser.</p>
           </div>
 
           <div className="projects-grid">
