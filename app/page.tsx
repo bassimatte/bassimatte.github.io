@@ -34,12 +34,14 @@ const projects = [
   },
 ];
 
-const wave = [
-  18, 26, 34, 20, 14, 28, 48, 66, 42, 25, 18, 38, 76, 54, 31, 20, 28, 62,
-  88, 58, 34, 24, 46, 70, 44, 30, 18, 26, 52, 82, 64, 36, 22, 18, 42, 72,
-  92, 68, 38, 20, 30, 56, 78, 48, 26, 18, 36, 66, 84, 52, 32, 22, 42, 74,
-  60, 34, 20, 28, 50, 76, 48, 28, 18, 34, 58, 40, 24, 16, 26, 44, 32, 18,
-];
+function HeroConstellation() {
+  return (
+    <div className="hero-constellation">
+      <div className="constellation-lines">{Array.from({ length: 15 }, (_, index) => <i key={index} />)}</div>
+      <div className="constellation-grains">{Array.from({ length: 18 }, (_, index) => <i key={index} />)}</div>
+    </div>
+  );
+}
 
 function ProjectArt({ name, number }: { name: string; number: string }) {
   const key = name.toLowerCase();
@@ -142,10 +144,7 @@ export default function Home() {
 
           <div className="hero-signal" aria-hidden="true">
             <div className="signal-label signal-label-left">INPUT / CURIOSITY</div>
-            <div className="signal-bars">
-              {wave.map((height, index) => <span key={`${height}-${index}`} style={{ height: `${height}%` }} />)}
-            </div>
-            <div className="signal-line" />
+            <HeroConstellation />
             <div className="signal-label signal-label-right">OUTPUT / WONDER</div>
           </div>
 
