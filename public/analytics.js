@@ -41,7 +41,7 @@
     }
 
     const url = new URL(element.href, window.location.href);
-    const project = ['mantice', 'glorb', 'campana'].find(function (name) {
+    const project = ['mantice', 'glorb', 'campana', 'maresono'].find(function (name) {
       return url.pathname.includes(`/${name}`);
     });
 
