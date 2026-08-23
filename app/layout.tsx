@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: "/favicon-sound.png",
-    shortcut: "/favicon-sound.png",
+    icon: "/favicon-sound-v2.png",
+    shortcut: "/favicon-sound-v2.png",
   },
 };
 
