@@ -120,6 +120,7 @@ const structuredData = {
         "https://github.com/bassimatte",
         "https://freesound.org/people/bassimat/",
         "https://t.me/m1285b",
+        "https://wa.me/bassimat",
       ],
       knowsAbout: [
         "Generative instruments",
@@ -267,7 +268,7 @@ export default function Home() {
               <h2>Say hello.</h2>
               <p>
                 Questions, feedback, collaboration—or simply a conversation
-                about sound. Write by email or find me on Telegram.
+                about sound. Write by email, Telegram or WhatsApp.
               </p>
             </div>
             <div className="contact-actions">
@@ -279,6 +280,11 @@ export default function Home() {
               <a className="contact-card contact-telegram" href="https://t.me/m1285b" target="_blank" rel="noreferrer">
                 <span className="contact-label">Telegram</span>
                 <strong>@m1285b</strong>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a className="contact-card contact-whatsapp" href="https://wa.me/bassimat" target="_blank" rel="noreferrer">
+                <span className="contact-label">WhatsApp</span>
+                <strong>@bassimat</strong>
                 <i aria-hidden="true">↗</i>
               </a>
               <div className="support-note">

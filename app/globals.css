@@ -410,6 +410,8 @@ h1 > span {
 .contact-email:focus-visible { color: var(--orange); }
 .contact-telegram:hover,
 .contact-telegram:focus-visible { color: var(--cyan); }
+.contact-whatsapp:hover,
+.contact-whatsapp:focus-visible { color: var(--gold); }
 
 .contact-label {
   color: var(--muted);
