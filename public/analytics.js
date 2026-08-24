@@ -63,8 +63,6 @@
       track('contact_opened', { channel: 'telegram', placement });
     } else if (url.hostname === 'wa.me' || url.hostname === 'api.whatsapp.com') {
       track('contact_opened', { channel: 'whatsapp', placement });
-    } else if (url.hostname === 'paypal.me') {
-      track('support_opened', { method: 'coffee', placement });
     }
   });
 

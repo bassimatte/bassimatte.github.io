@@ -287,10 +287,6 @@ export default function Home() {
                 <strong>@bassimat</strong>
                 <i aria-hidden="true">↗</i>
               </a>
-              <div className="support-note">
-                <p>If these tools have been useful, you can support future experiments with a coffee.</p>
-                <a href="https://paypal.me/basmat85" target="_blank" rel="noreferrer">Buy me a coffee <span aria-hidden="true">↗</span></a>
-              </div>
             </div>
           </div>
         </section>
