@@ -56,7 +56,12 @@
     }
 
     if (url.hostname === 'freesound.org') {
-      track('profile_opened', { profile: 'freesound', placement });
+      const soundMatch = url.pathname.match(/\/sounds\/(\d+)\//);
+      if (soundMatch) {
+        track('archive_sound_opened', { sound: soundMatch[1], placement });
+      } else {
+        track('profile_opened', { profile: 'freesound', placement });
+      }
     } else if (url.hostname === 'github.com') {
       track('profile_opened', { profile: 'github', placement });
     } else if (url.hostname === 't.me') {
@@ -68,6 +73,10 @@
 
   document.addEventListener('portfolio:sample-started', function (event) {
     const detail = event.detail || {};
+    if (detail.project === 'archive') {
+      track('archive_sample_started', { sound: detail.sample });
+      return;
+    }
     if (!PORTFOLIO_PROJECTS.includes(detail.project)) return;
     track('sample_started', { project: detail.project, sample: detail.sample });
   });

@@ -11,19 +11,23 @@
     return button?.querySelector('.sample-icon');
   }
 
+  function labelFor(button) {
+    return button?.dataset.sampleLabel || button?.dataset.sampleProject;
+  }
+
   function setIdle(button) {
     if (!button) return;
     const icon = iconFor(button);
     if (icon) icon.textContent = '▶';
     button.setAttribute('aria-pressed', 'false');
-    button.setAttribute('aria-label', `Play ${button.dataset.sampleProject} sample`);
+    button.setAttribute('aria-label', `Play ${labelFor(button)}`);
   }
 
   function setPlaying(button) {
     const icon = iconFor(button);
     if (icon) icon.textContent = 'Ⅱ';
     button.setAttribute('aria-pressed', 'true');
-    button.setAttribute('aria-label', `Pause ${button.dataset.sampleProject} sample`);
+    button.setAttribute('aria-label', `Pause ${labelFor(button)}`);
   }
 
   function sampleSet(button) {

@@ -56,6 +56,33 @@ const projects = [
   },
 ];
 
+const archiveSounds = [
+  {
+    id: "839053",
+    title: "Granular Ambient Landscape in C Major at 120bpm",
+    duration: "04:16",
+    preview: "https://cdn.freesound.org/previews/839/839053_15636277-hq.mp3",
+  },
+  {
+    id: "861210",
+    title: "Ambient Drones, Wind and Chimes Growing into your Mind Soundscape",
+    duration: "03:00",
+    preview: "https://cdn.freesound.org/previews/861/861210_15636277-hq.mp3",
+  },
+  {
+    id: "845391",
+    title: "Drone Like Growling Pad for Dark Ambient",
+    duration: "00:30",
+    preview: "https://cdn.freesound.org/previews/845/845391_15636277-hq.mp3",
+  },
+  {
+    id: "859546",
+    title: "Minimal Vintage Relaxing Meditative Ambient Piano Soundscape in C minor",
+    duration: "43:57",
+    preview: "https://cdn.freesound.org/previews/859/859546_15636277-hq.mp3",
+  },
+];
+
 function HeroConstellation() {
   return (
     <div className="hero-constellation">
@@ -240,6 +267,25 @@ export default function Home() {
             <p>Field recordings, generated sounds and transformed everyday moments—shared for other people to discover, use and reshape.</p>
             <div className="sound-topics" aria-label="Sound archive topics">
               <span>FIELD RECORDING</span><span>AMBIENT</span><span>FOLEY</span><span>GENERATIVE</span><span>GRANULAR</span>
+            </div>
+            <div className="archive-list" aria-label="Selected sounds from the archive">
+              {archiveSounds.map((sound) => (
+                <div className="archive-item" key={sound.id}>
+                  <button
+                    className="archive-play"
+                    type="button"
+                    data-sample-project="archive"
+                    data-sample-label={sound.title}
+                    data-samples={sound.preview}
+                    data-sample-names={sound.id}
+                    aria-label={`Play ${sound.title}`}
+                    aria-pressed="false"
+                  ><span className="sample-icon" aria-hidden="true">▶</span></button>
+                  <strong>{sound.title}</strong>
+                  <span className="archive-duration">{sound.duration}</span>
+                  <a href={`https://freesound.org/people/bassimat/sounds/${sound.id}/`} target="_blank" rel="noreferrer">Freesound <span aria-hidden="true">↗</span></a>
+                </div>
+              ))}
             </div>
             <a className="text-link" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Visit bassimat on Freesound <span aria-hidden="true">↗</span></a>
           </div>
