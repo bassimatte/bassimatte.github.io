@@ -6,6 +6,7 @@
   const PORTFOLIO_ANALYTICS_EVENT_PREFIX = 'portfolio_';
   const PORTFOLIO_UMAMI_WEBSITE_ID = 'b2300e0b-bc69-49d7-ad05-06f980b5ed38';
   const PORTFOLIO_UMAMI_SCRIPT_URL = 'https://cloud.umami.is/script.js';
+  const PORTFOLIO_PROJECTS = ['mantice', 'glorb', 'campana', 'maresono'];
 
   if (window.location.hostname !== PORTFOLIO_ANALYTICS_HOST) return;
 
@@ -41,7 +42,7 @@
     }
 
     const url = new URL(element.href, window.location.href);
-    const project = ['mantice', 'glorb', 'campana', 'maresono'].find(function (name) {
+    const project = PORTFOLIO_PROJECTS.find(function (name) {
       return url.pathname.includes(`/${name}`);
     });
 
@@ -63,6 +64,12 @@
     } else if (url.hostname === 'paypal.me') {
       track('support_opened', { method: 'coffee', placement });
     }
+  });
+
+  document.addEventListener('portfolio:sample-started', function (event) {
+    const detail = event.detail || {};
+    if (!PORTFOLIO_PROJECTS.includes(detail.project)) return;
+    track('sample_started', { project: detail.project, sample: detail.sample });
   });
 
   if ('IntersectionObserver' in window) {

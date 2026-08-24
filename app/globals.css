@@ -310,12 +310,15 @@ h1 > span {
 .project-description { max-width: 560px; margin: 34px 0 26px 60px; color: #bbb6ad; font-size: 15px; line-height: 1.7; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 34px 60px; padding: 0; list-style: none; }
 .tag-list li { padding: 6px 9px; border: 1px solid var(--line); color: var(--muted); font: 8px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
-.project-links { display: flex; gap: 28px; margin-left: 60px; padding-top: 20px; border-top: 1px solid var(--line); font: 9px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
-.project-links a { transition: color 180ms ease; }
-.project-orange .project-links a:hover { color: var(--orange); }
-.project-cyan .project-links a:hover { color: var(--cyan); }
-.project-gold .project-links a:hover { color: var(--gold); }
-.project-teal .project-links a:hover { color: var(--teal); }
+.project-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-left: 60px; padding-top: 20px; border-top: 1px solid var(--line); font: 9px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.project-links a, .sample-link { transition: color 180ms ease; }
+.sample-link { appearance: none; margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; }
+.sample-link:focus-visible { outline: 1px solid currentColor; outline-offset: 5px; }
+.sample-icon { display: inline-block; width: 1.5em; font-size: 0.9em; }
+.project-orange .project-links a:hover, .project-orange .sample-link:hover, .project-orange .sample-link[aria-pressed="true"] { color: var(--orange); }
+.project-cyan .project-links a:hover, .project-cyan .sample-link:hover, .project-cyan .sample-link[aria-pressed="true"] { color: var(--cyan); }
+.project-gold .project-links a:hover, .project-gold .sample-link:hover, .project-gold .sample-link[aria-pressed="true"] { color: var(--gold); }
+.project-teal .project-links a:hover, .project-teal .sample-link:hover, .project-teal .sample-link[aria-pressed="true"] { color: var(--teal); }
 
 .sounds-section { position: relative; display: grid; grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr); align-items: center; min-height: 760px; padding: clamp(90px, 12vw, 170px) clamp(22px, 6vw, 110px); overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #0b0b0a; }
 .sounds-orbit { position: relative; width: min(42vw, 540px); aspect-ratio: 1; margin: auto; border: 1px solid rgba(0, 200, 240, 0.25); border-radius: 50%; }

@@ -42,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script src="/analytics.js" defer />
+        <script src="/samples.js" defer />
       </head>
       <body>{children}</body>
     </html>

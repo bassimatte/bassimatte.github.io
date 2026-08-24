@@ -9,6 +9,8 @@ const projects = [
     accent: "orange",
     live: "https://bassimatte.github.io/mantice/",
     code: "https://github.com/bassimatte/mantice",
+    samples: ["https://cdn.freesound.org/previews/860/860122_15636277-hq.mp3"],
+    sampleNames: ["expanding_drone"],
   },
   {
     number: "02",
@@ -20,6 +22,11 @@ const projects = [
     accent: "cyan",
     live: "https://bassimatte.github.io/glorb/",
     code: "https://github.com/bassimatte/glorb",
+    samples: [
+      "https://cdn.freesound.org/previews/855/855564_15636277-hq.mp3",
+      "https://cdn.freesound.org/previews/855/855481_15636277-hq.mp3",
+    ],
+    sampleNames: ["insects", "ui"],
   },
   {
     number: "03",
@@ -31,6 +38,8 @@ const projects = [
     accent: "gold",
     live: "https://bassimatte.github.io/campana/",
     code: "https://github.com/bassimatte/campana",
+    samples: ["https://cdn.freesound.org/previews/855/855554_15636277-hq.mp3"],
+    sampleNames: ["aurora"],
   },
   {
     number: "04",
@@ -42,6 +51,8 @@ const projects = [
     accent: "teal",
     live: "https://bassimatte.github.io/maresono/",
     code: "https://github.com/bassimatte/maresono",
+    samples: ["/audio/maresono-onda-lunga-sample.mp3"],
+    sampleNames: ["onda_lunga"],
   },
 ];
 
@@ -202,6 +213,15 @@ export default function Home() {
                     {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
                   </ul>
                   <div className="project-links">
+                    <button
+                      className="sample-link"
+                      type="button"
+                      data-sample-project={project.name.toLowerCase()}
+                      data-samples={project.samples.join("|")}
+                      data-sample-names={project.sampleNames.join("|")}
+                      aria-label={`Play ${project.name} sample`}
+                      aria-pressed="false"
+                    ><span className="sample-icon" aria-hidden="true">▶</span> Sample</button>
                     <a href={project.live} target="_blank" rel="noreferrer">Play online <span aria-hidden="true">↗</span></a>
                     <a href={project.code} target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
                   </div>
