@@ -23,10 +23,10 @@ const projects = [
     live: "https://bassimatte.github.io/glorb/",
     code: "https://github.com/bassimatte/glorb",
     samples: [
-      "https://cdn.freesound.org/previews/855/855564_15636277-hq.mp3",
       "https://cdn.freesound.org/previews/855/855481_15636277-hq.mp3",
+      "https://cdn.freesound.org/previews/855/855564_15636277-hq.mp3",
     ],
-    sampleNames: ["insects", "ui"],
+    sampleNames: ["ui", "insects"],
   },
   {
     number: "03",
