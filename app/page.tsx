@@ -11,6 +11,7 @@ const projects = [
     code: "https://github.com/bassimatte/mantice",
     samples: ["https://cdn.freesound.org/previews/860/860122_15636277-hq.mp3"],
     sampleNames: ["expanding_drone"],
+    sampleGainsDb: [0],
   },
   {
     number: "02",
@@ -27,6 +28,7 @@ const projects = [
       "https://cdn.freesound.org/previews/855/855564_15636277-hq.mp3",
     ],
     sampleNames: ["ui", "insects"],
+    sampleGainsDb: [-1.5, -8.4],
   },
   {
     number: "03",
@@ -40,6 +42,7 @@ const projects = [
     code: "https://github.com/bassimatte/campana",
     samples: ["https://cdn.freesound.org/previews/855/855554_15636277-hq.mp3"],
     sampleNames: ["aurora"],
+    sampleGainsDb: [-2.1],
   },
   {
     number: "04",
@@ -53,6 +56,7 @@ const projects = [
     code: "https://github.com/bassimatte/maresono",
     samples: ["/audio/maresono-onda-lunga-sample.mp3"],
     sampleNames: ["onda_lunga"],
+    sampleGainsDb: [0],
   },
 ];
 
@@ -247,6 +251,7 @@ export default function Home() {
                       data-sample-project={project.name.toLowerCase()}
                       data-samples={project.samples.join("|")}
                       data-sample-names={project.sampleNames.join("|")}
+                      data-sample-gains-db={project.sampleGainsDb.join("|")}
                       aria-label={`Play ${project.name} sample`}
                       aria-pressed="false"
                     ><span className="sample-icon" aria-hidden="true">▶</span> Sample</button>

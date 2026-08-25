@@ -33,7 +33,13 @@
   function sampleSet(button) {
     const sources = (button.dataset.samples || '').split('|').filter(Boolean);
     const names = (button.dataset.sampleNames || '').split('|');
-    return { sources, names };
+    const gainsDb = (button.dataset.sampleGainsDb || '').split('|').map(Number);
+    return { sources, names, gainsDb };
+  }
+
+  function playbackVolume(gainDb) {
+    if (!Number.isFinite(gainDb)) return 1;
+    return Math.min(1, Math.max(0, Math.pow(10, gainDb / 20)));
   }
 
   function dispatchStarted(project, sample) {
@@ -44,12 +50,13 @@
 
   function startFresh(button) {
     const project = button.dataset.sampleProject;
-    const { sources, names } = sampleSet(button);
+    const { sources, names, gainsDb } = sampleSet(button);
     if (!project || sources.length === 0) return;
 
     setIdle(activeButton);
     const index = nextSampleByProject.get(project) || 0;
     nextSampleByProject.set(project, (index + 1) % sources.length);
+    player.volume = playbackVolume(gainsDb[index]);
     player.src = sources[index];
     activeButton = button;
 
