@@ -49,7 +49,7 @@ const projects = [
     name: "Maresono",
     kicker: "The sound of the sea",
     description:
-      "A generative ocean sound engine that learns the spectral character of real ocean drums and resynthesizes infinite, never-repeating wave soundscapes.",
+      "A generative sound engine for ocean waves that learns the spectral character of real ocean drums and resynthesizes infinite, never-repeating wave soundscapes.",
     tags: ["Ocean", "Spectral", "Infinite"],
     accent: "teal",
     live: "https://bassimatte.github.io/maresono/",
