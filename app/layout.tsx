@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: "/favicon-sound-v2.png",
-    shortcut: "/favicon-sound-v2.png",
+    icon: "/favicon-open-orbit.png",
+    shortcut: "/favicon-open-orbit.png",
   },
 };
 
