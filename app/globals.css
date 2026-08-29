@@ -86,6 +86,11 @@ nav { display: flex; gap: clamp(24px, 4vw, 52px); font: 10px var(--mono); letter
 nav a, .header-link, footer a { transition: color 180ms ease; }
 nav a:hover, .header-link:hover, footer a:hover { color: var(--orange); }
 .header-link { justify-self: end; font: 10px var(--mono); letter-spacing: 0.13em; text-transform: uppercase; }
+.language-switcher { justify-self: end; display: flex; align-items: center; gap: 8px; color: var(--muted); font: 9px var(--mono); letter-spacing: 0.13em; }
+.language-switcher a { transition: color 180ms ease; }
+.language-switcher a:hover, .language-switcher a:focus-visible { color: var(--orange); }
+.language-switcher .active { color: var(--paper); }
+.language-switcher i { color: var(--line-strong); font-style: normal; }
 
 .hero {
   position: relative;

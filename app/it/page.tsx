@@ -2,10 +2,10 @@ const projects = [
   {
     number: "01",
     name: "Mantice",
-    kicker: "The breath behind the drone",
+    kicker: "Il respiro dentro il drone",
     description:
-      "A deep ambient instrument for building slowly evolving drones with FM, subtractive, granular and wavetable synthesis.",
-    tags: ["Ambient", "Spatial", "Evolving"],
+      "Uno strumento ambient profondo per costruire droni in lenta evoluzione con sintesi FM, sottrattiva, granulare e wavetable.",
+    tags: ["Ambient", "Spaziale", "In evoluzione"],
     accent: "orange",
     live: "https://bassimatte.github.io/mantice/",
     code: "https://github.com/bassimatte/mantice",
@@ -16,10 +16,10 @@ const projects = [
   {
     number: "02",
     name: "Glorb",
-    kicker: "No samples. No loops. Just math.",
+    kicker: "Niente campioni. Niente loop. Solo matematica.",
     description:
-      "An organic sound generator that turns algorithms into strange, tactile audio—from insects and weather to sci-fi, foley and glitch.",
-    tags: ["Generative", "Organic", "Playful"],
+      "Un generatore sonoro organico che trasforma gli algoritmi in suoni strani e tattili: dagli insetti ai fenomeni atmosferici, fino alla fantascienza, al foley e ai glitch.",
+    tags: ["Generativo", "Organico", "Giocoso"],
     accent: "cyan",
     live: "https://bassimatte.github.io/glorb/",
     code: "https://github.com/bassimatte/glorb",
@@ -33,10 +33,10 @@ const projects = [
   {
     number: "03",
     name: "Campana",
-    kicker: "An infinite field of bells",
+    kicker: "Un campo infinito di campane",
     description:
-      "A focused generative bell instrument for resonant, meditative patterns—somewhere between a struck object and an imagined place.",
-    tags: ["Bells", "Resonance", "Infinite"],
+      "Uno strumento generativo dedicato alle campane e a figure risonanti e meditative, sospese tra un oggetto percosso e un luogo immaginato.",
+    tags: ["Campane", "Risonanza", "Infinito"],
     accent: "gold",
     live: "https://bassimatte.github.io/campana/",
     code: "https://github.com/bassimatte/campana",
@@ -47,10 +47,10 @@ const projects = [
   {
     number: "04",
     name: "Maresono",
-    kicker: "The sound of the sea",
+    kicker: "Il suono del mare",
     description:
-      "A generative sound engine for ocean waves that learns the spectral character of real ocean drums and resynthesizes infinite, never-repeating wave soundscapes.",
-    tags: ["Ocean", "Spectral", "Infinite"],
+      "Un motore sonoro generativo per le onde del mare: apprende il carattere spettrale di veri ocean drum e risintetizza paesaggi sonori di onde, infiniti e mai uguali.",
+    tags: ["Oceano", "Spettrale", "Infinito"],
     accent: "teal",
     live: "https://bassimatte.github.io/maresono/",
     code: "https://github.com/bassimatte/maresono",
@@ -63,25 +63,25 @@ const projects = [
 const archiveSounds = [
   {
     id: "839053",
-    title: "Granular Ambient Landscape in C Major at 120bpm",
+    title: "Paesaggio ambient granulare in Do maggiore a 120 BPM",
     duration: "04:16",
     preview: "https://cdn.freesound.org/previews/839/839053_15636277-hq.mp3",
   },
   {
     id: "861210",
-    title: "Ambient Drones, Wind and Chimes Growing into your Mind Soundscape",
+    title: "Droni ambient, vento e campane che si espandono nella mente",
     duration: "03:00",
     preview: "https://cdn.freesound.org/previews/861/861210_15636277-hq.mp3",
   },
   {
     id: "845391",
-    title: "Drone Like Growling Pad for Dark Ambient",
+    title: "Pad simile a un drone ringhiante per dark ambient",
     duration: "00:30",
     preview: "https://cdn.freesound.org/previews/845/845391_15636277-hq.mp3",
   },
   {
     id: "859546",
-    title: "Minimal Vintage Relaxing Meditative Ambient Piano Soundscape in C minor",
+    title: "Paesaggio sonoro minimale di pianoforte vintage in Do minore",
     duration: "43:57",
     preview: "https://cdn.freesound.org/previews/859/859546_15636277-hq.mp3",
   },
@@ -106,7 +106,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
         <>
           <div className="mantice-waves"><span /><span /><span /><span /></div>
           <div className="mantice-spectrum">{Array.from({ length: 18 }, (_, index) => <i key={index} />)}</div>
-          <span className="art-caption">DRONE / CONTINUUM</span>
+          <span className="art-caption">DRONE / CONTINUO</span>
         </>
       )}
       {key === "glorb" && (
@@ -114,7 +114,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
           <div className="glorb-orbits"><span /><span /></div>
           <div className="glorb-core" />
           <div className="glorb-particles">{Array.from({ length: 18 }, (_, index) => <i key={index} />)}</div>
-          <span className="art-caption">PROCEDURE / EMERGENCE</span>
+          <span className="art-caption">PROCESSO / EMERSIONE</span>
         </>
       )}
       {key === "campana" && (
@@ -124,14 +124,14 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
             <div className="campana-rings"><span /><span /><span /><span /><span /><span /></div>
             <div className="campana-core" />
           </div>
-          <span className="art-caption">STRIKE / DECAY</span>
+          <span className="art-caption">PERCUSSIONE / DECADIMENTO</span>
         </>
       )}
       {key === "maresono" && (
         <>
           <div className="maresono-horizon" />
           <div className="maresono-waves"><span /><span /><span /><span /><span /></div>
-          <span className="art-caption">SPECTRUM / TIDE</span>
+          <span className="art-caption">SPETTRO / MAREA</span>
         </>
       )}
     </div>
@@ -154,10 +154,10 @@ const structuredData = {
         "https://wa.me/bassimat",
       ],
       knowsAbout: [
-        "Generative instruments",
-        "Experimental sound design",
-        "Sound transformation",
-        "Audio synthesis",
+        "Strumenti generativi",
+        "Sound design sperimentale",
+        "Trasformazione sonora",
+        "Sintesi audio",
       ],
     },
     ...projects.map((project) => ({
@@ -173,47 +173,47 @@ const structuredData = {
   ],
 };
 
-export default function Home() {
+export default function HomeItaliano() {
   return (
-    <>
-      <a className="skip-link" href="#main">Skip to content</a>
+    <div lang="it">
+      <a className="skip-link" href="#main">Vai al contenuto</a>
       <div className="ambient ambient-one" aria-hidden="true" />
       <div className="ambient ambient-two" aria-hidden="true" />
 
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Matteo Bassi, home">
+        <a className="wordmark" href="#top" aria-label="Matteo Bassi, pagina iniziale">
           <span className="wordmark-mark">MB</span>
           <span className="wordmark-handle">/ bassimat</span>
         </a>
-        <nav aria-label="Primary navigation">
-          <a href="#instruments">Instruments</a>
-          <a href="#sounds">Sounds</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <nav aria-label="Navigazione principale">
+          <a href="#instruments">Strumenti</a>
+          <a href="#sounds">Suoni</a>
+          <a href="#about">Chi sono</a>
+          <a href="#contact">Contatti</a>
         </nav>
-        <div className="language-switcher" aria-label="Language selection"><a className="active" href="/" lang="en" aria-current="page">EN</a><i aria-hidden="true">/</i><a href="/it/" lang="it">IT</a></div>
+        <div className="language-switcher" aria-label="Selezione lingua"><a href="/" lang="en">EN</a><i aria-hidden="true">/</i><a className="active" href="/it/" lang="it" aria-current="page">IT</a></div>
       </header>
 
       <main id="main">
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Independent sound maker · Italy</p>
-            <h1>Matteo Bassi<span>make sound from nothing.</span></h1>
-            <p className="hero-intro">Generative instruments and experimental sound transformation—following the unexpected.</p>
+            <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Autore e sperimentatore sonoro · Italia</p>
+            <h1>Matteo Bassi<span>suoni dal nulla.</span></h1>
+            <p className="hero-intro">Strumenti generativi e sperimentazione sonora, seguendo l’inaspettato.</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#instruments">Explore the instruments <span aria-hidden="true">↓</span></a>
-              <a className="button button-secondary" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Listen on Freesound <span aria-hidden="true">↗</span></a>
+              <a className="button button-primary" href="#instruments">Esplora gli strumenti <span aria-hidden="true">↓</span></a>
+              <a className="button button-secondary" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Ascolta su Freesound <span aria-hidden="true">↗</span></a>
             </div>
           </div>
 
           <div className="hero-signal" aria-hidden="true">
-            <div className="signal-label signal-label-left">INPUT / CURIOSITY</div>
+            <div className="signal-label signal-label-left">INGRESSO / CURIOSITÀ</div>
             <HeroConstellation />
-            <div className="signal-label signal-label-right">OUTPUT / WONDER</div>
+            <div className="signal-label signal-label-right">USCITA / MERAVIGLIA</div>
           </div>
 
-          <div className="project-index" aria-label="Featured projects">
-            <span>FOUR INSTRUMENTS</span>
+          <div className="project-index" aria-label="Progetti in evidenza">
+            <span>QUATTRO STRUMENTI</span>
             <ol>
               <li><a href="#mantice"><b>01</b> Mantice</a></li>
               <li><a href="#glorb"><b>02</b> Glorb</a></li>
@@ -225,15 +225,15 @@ export default function Home() {
 
         <section className="projects-section" id="instruments">
           <div className="section-heading">
-            <p className="section-number">01 — INSTRUMENTS</p>
-            <h2>Four ways into sound.</h2>
-            <p>Each instrument begins with a different question. All four are free, open source and ready to play in your browser.</p>
+            <p className="section-number">01 — STRUMENTI</p>
+            <h2>Quattro vie attraverso il suono.</h2>
+            <p>Ogni strumento nasce da una domanda diversa. Tutti e quattro sono gratuiti, open source e pronti da suonare nel browser.</p>
           </div>
 
           <div className="projects-grid">
             {projects.map((project) => (
               <article className={`project-card project-${project.accent}`} id={project.name.toLowerCase()} key={project.name}>
-                <a className="project-media" href={project.live} target="_blank" rel="noreferrer" aria-label={`Open ${project.name}`}>
+                <a className="project-media" href={project.live} target="_blank" rel="noreferrer" aria-label={`Apri ${project.name}`}>
                   <ProjectArt name={project.name} number={project.number} />
                 </a>
                 <div className="project-body">
@@ -242,7 +242,7 @@ export default function Home() {
                     <div><h3><a href={project.live} target="_blank" rel="noreferrer">{project.name}</a></h3><p className="project-kicker">{project.kicker}</p></div>
                   </div>
                   <p className="project-description">{project.description}</p>
-                  <ul className="tag-list" aria-label={`${project.name} qualities`}>
+                  <ul className="tag-list" aria-label={`Qualità di ${project.name}`}>
                     {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
                   </ul>
                   <div className="project-links">
@@ -253,11 +253,11 @@ export default function Home() {
                       data-samples={project.samples.join("|")}
                       data-sample-names={project.sampleNames.join("|")}
                       data-sample-gains-db={project.sampleGainsDb.join("|")}
-                      aria-label={`Play ${project.name} sample`}
+                      aria-label={`Ascolta un esempio di ${project.name}`}
                       aria-pressed="false"
-                    ><span className="sample-icon" aria-hidden="true">▶</span> Sample</button>
-                    <a href={project.live} target="_blank" rel="noreferrer">Play online <span aria-hidden="true">↗</span></a>
-                    <a href={project.code} target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+                    ><span className="sample-icon" aria-hidden="true">▶</span> Ascolta</button>
+                    <a href={project.live} target="_blank" rel="noreferrer">Suona online <span aria-hidden="true">↗</span></a>
+                    <a href={project.code} target="_blank" rel="noreferrer">Codice sorgente <span aria-hidden="true">↗</span></a>
                   </div>
                 </div>
               </article>
@@ -268,13 +268,13 @@ export default function Home() {
         <section className="sounds-section" id="sounds">
           <div className="sounds-orbit" aria-hidden="true"><span /><span /><span /><i /></div>
           <div className="sounds-copy">
-            <p className="section-number">02 — FREESOUND ARCHIVE</p>
-            <h2>A public archive of texture.</h2>
-            <p>Field recordings, generated sounds and transformed everyday moments—shared for other people to discover, use and reshape.</p>
-            <div className="sound-topics" aria-label="Sound archive topics">
-              <span>FIELD RECORDING</span><span>AMBIENT</span><span>FOLEY</span><span>GENERATIVE</span><span>GRANULAR</span>
+            <p className="section-number">02 — ARCHIVIO FREESOUND</p>
+            <h2>Un archivio aperto di texture sonore.</h2>
+            <p>Registrazioni sul campo, suoni generati e frammenti del quotidiano trasformati — condivisi perché altri possano scoprirli, usarli e trasformarli ancora.</p>
+            <div className="sound-topics" aria-label="Temi dell’archivio sonoro">
+              <span>REGISTRAZIONI</span><span>AMBIENT</span><span>FOLEY</span><span>GENERATIVO</span><span>GRANULARE</span>
             </div>
-            <div className="archive-list" aria-label="Selected sounds from the archive">
+            <div className="archive-list" aria-label="Suoni scelti dall’archivio">
               {archiveSounds.map((sound) => (
                 <div className="archive-item" key={sound.id}>
                   <button
@@ -284,7 +284,7 @@ export default function Home() {
                     data-sample-label={sound.title}
                     data-samples={sound.preview}
                     data-sample-names={sound.id}
-                    aria-label={`Play ${sound.title}`}
+                    aria-label={`Ascolta ${sound.title}`}
                     aria-pressed="false"
                   ><span className="sample-icon" aria-hidden="true">▶</span></button>
                   <strong>{sound.title}</strong>
@@ -293,18 +293,18 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <a className="text-link" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Visit bassimat on Freesound <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Visita bassimat su Freesound <span aria-hidden="true">↗</span></a>
           </div>
         </section>
 
         <section className="about-section" id="about">
-          <p className="section-number">03 — ABOUT</p>
+          <p className="section-number">03 — CHI SONO</p>
           <div className="about-grid">
-            <h2>Curiosity is the<span>instrument.</span></h2>
+            <h2>La curiosità è lo<span>strumento.</span></h2>
             <div className="about-copy">
-              <p className="about-lead">I’m fascinated by the process of creating something from nothing.</p>
-              <p>Generating sound is part experiment, part meditation: a way to slow down, follow unexpected details and make tools that invite other people into the same process.</p>
-              <p>The projects here are open, playful and made to be used—not simply observed.</p>
+              <p className="about-lead">Mi affascina creare qualcosa dal nulla.</p>
+              <p>Generare suoni è in parte esperimento, in parte meditazione: un modo per rallentare, seguire i dettagli inattesi e creare strumenti che invitino altre persone a entrare nello stesso processo.</p>
+              <p>I progetti raccolti qui sono aperti, giocosi e fatti per essere usati, non semplicemente osservati.</p>
               <div className="about-links">
                 <a href="https://github.com/bassimatte" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 <a href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Freesound <span aria-hidden="true">↗</span></a>
@@ -314,19 +314,19 @@ export default function Home() {
         </section>
 
         <section className="contact-section" id="contact">
-          <p className="section-number">04 — CONTACT</p>
+          <p className="section-number">04 — CONTATTI</p>
           <div className="contact-grid">
             <div className="contact-copy">
-              <h2>Say hello.</h2>
+              <h2>Scrivimi.</h2>
               <p>
-                Questions, feedback, collaboration—or simply a conversation
-                about sound. Write by email, Telegram or WhatsApp.
+                Domande, feedback, collaborazioni — o semplicemente una conversazione
+                sul suono. Puoi contattarmi via email, Telegram o WhatsApp.
               </p>
             </div>
             <div className="contact-actions">
-              <button className="contact-card contact-email" type="button" data-email-link="YmFzc2kubWF0dGVvQGdtYWlsLmNvbQ==" aria-label="Send Matteo Bassi an email">
+              <button className="contact-card contact-email" type="button" data-email-link="YmFzc2kubWF0dGVvQGdtYWlsLmNvbQ==" aria-label="Invia un’email a Matteo Bassi">
                 <span className="contact-label">Email</span>
-                <strong>Send an email</strong>
+                <strong>Invia un’email</strong>
                 <i aria-hidden="true">↗</i>
               </button>
               <a className="contact-card contact-telegram" href="https://t.me/m1285b" target="_blank" rel="noreferrer">
@@ -345,12 +345,13 @@ export default function Home() {
       </main>
 
       <footer>
-        <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Generative instruments · sound transformation · open tools</p></div>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Strumenti generativi · trasformazione sonora · strumenti open source</p></div>
+        <a href="#top">Torna su <span aria-hidden="true">↑</span></a>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang='it';` }} />
       <script dangerouslySetInnerHTML={{ __html: `(function(){var b=document.querySelector('[data-email-link]');if(!b)return;b.addEventListener('click',function(){window.location.href='mailto:'+atob(b.getAttribute('data-email-link'));});})();` }} />
-    </>
+    </div>
   );
 }

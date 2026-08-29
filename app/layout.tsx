@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   verification: {
     google: "pp3jhptIHkhnjku-p-0sm3J4XAJzQlE7WiNZ2JwKUNA",
   },
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: { en: "/", it: "/it/", "x-default": "/" },
+  },
   openGraph: {
     type: "website",
     url: "/",
