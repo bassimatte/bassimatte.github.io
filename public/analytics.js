@@ -42,6 +42,15 @@
     }
 
     const url = new URL(element.href, window.location.href);
+    if (element.matches('[data-support-checkout="paypal"]')) {
+      track('support_checkout_opened', {
+        provider: 'paypal',
+        cadence: 'one_time',
+        source: 'support_page',
+      });
+      return;
+    }
+
     const project = PORTFOLIO_PROJECTS.find(function (name) {
       return url.pathname.includes(`/${name}`);
     });

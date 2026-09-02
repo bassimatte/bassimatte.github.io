@@ -189,6 +189,7 @@ export default function HomeItaliano() {
           <a href="#instruments">Strumenti</a>
           <a href="#sounds">Suoni</a>
           <a href="#about">Chi sono</a>
+          <a href="/it/support/">Sostieni</a>
           <a href="#contact">Contatti</a>
         </nav>
         <div className="language-switcher" aria-label="Selezione lingua"><a href="/" lang="en">EN</a><i aria-hidden="true">/</i><a className="active" href="/it/" lang="it" aria-current="page">IT</a></div>
@@ -308,6 +309,7 @@ export default function HomeItaliano() {
               <div className="about-links">
                 <a href="https://github.com/bassimatte" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 <a href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Freesound <span aria-hidden="true">↗</span></a>
+                <a href="/it/support/">Sostieni <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </div>
@@ -346,7 +348,7 @@ export default function HomeItaliano() {
 
       <footer>
         <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Strumenti generativi · trasformazione sonora · strumenti open source</p></div>
-        <a href="#top">Torna su <span aria-hidden="true">↑</span></a>
+        <div className="footer-links"><a href="/it/support/">Sostieni</a><a href="#top">Torna su <span aria-hidden="true">↑</span></a></div>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

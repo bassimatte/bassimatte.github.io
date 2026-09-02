@@ -189,6 +189,7 @@ export default function Home() {
           <a href="#instruments">Instruments</a>
           <a href="#sounds">Sounds</a>
           <a href="#about">About</a>
+          <a href="/support/">Support</a>
           <a href="#contact">Contact</a>
         </nav>
         <div className="language-switcher" aria-label="Language selection"><a className="active" href="/" lang="en" aria-current="page">EN</a><i aria-hidden="true">/</i><a href="/it/" lang="it">IT</a></div>
@@ -308,6 +309,7 @@ export default function Home() {
               <div className="about-links">
                 <a href="https://github.com/bassimatte" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 <a href="https://freesound.org/people/bassimat/" target="_blank" rel="noreferrer">Freesound <span aria-hidden="true">↗</span></a>
+                <a href="/support/">Support <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </div>
@@ -346,7 +348,7 @@ export default function Home() {
 
       <footer>
         <div><p className="footer-name">Matteo Bassi <span>/ bassimat</span></p><p>Generative instruments · sound transformation · open tools</p></div>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <div className="footer-links"><a href="/support/">Support</a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

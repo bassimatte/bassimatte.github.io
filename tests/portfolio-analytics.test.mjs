@@ -10,7 +10,7 @@ const analytics = await readFile(
 
 
 test("classifies every portfolio instrument as a project", () => {
-  const projectList = analytics.match(/const project = \[(.*?)\]\.find/s)?.[1] ?? "";
+  const projectList = analytics.match(/const PORTFOLIO_PROJECTS = \[(.*?)\]/s)?.[1] ?? "";
 
   for (const project of ["mantice", "glorb", "campana", "maresono"]) {
     assert.match(projectList, new RegExp(`['\"]${project}['\"]`));
@@ -28,4 +28,12 @@ test("classifies project source and play destinations before profile links", () 
     analytics,
     /destination:\s*url\.hostname === 'github\.com' \? 'source' : 'play'/,
   );
+});
+
+test("tracks PayPal checkout intent without collecting amount or identity", () => {
+  assert.match(analytics, /support_checkout_opened/);
+  assert.match(analytics, /provider:\s*'paypal'/);
+  assert.match(analytics, /cadence:\s*'one_time'/);
+  assert.match(analytics, /source:\s*'support_page'/);
+  assert.doesNotMatch(analytics, /support_checkout_opened[\s\S]{0,180}(amount|email|name):/);
 });
