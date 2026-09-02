@@ -52,7 +52,7 @@ export default function SupportPage() {
         <section className="support-hero">
           <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Independent · free · open source</p>
           <h1>Help keep the sound<span>alive and online.</span></h1>
-          <p className="support-lead">All instruments are free to use, open source and made without advertising. Their online audio engines still have real hosting costs. If you liked them, please consider support hosting costs.</p>
+          <p className="support-lead">All instruments are free to use, open source and made without advertising. Their online audio engines still have real hosting costs. If you enjoy using them, please consider supporting their hosting costs.</p>
           <div className="support-payment" aria-labelledby="support-amount-title">
             <p className="support-payment-label" id="support-amount-title">Choose a one-time amount</p>
             <div className="support-amounts">

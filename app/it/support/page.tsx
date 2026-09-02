@@ -52,7 +52,7 @@ export default function SupportPageItaliano() {
         <section className="support-hero">
           <p className="eyebrow"><span className="signal-dot" aria-hidden="true" />Indipendente · gratuito · open source</p>
           <h1>Aiuta il suono a restare<span>vivo e online.</span></h1>
-          <p className="support-lead">Tutti gli strumenti sono gratuiti, open source e senza pubblicità. I loro motori audio online hanno comunque costi di hosting reali. Se ti sono piaciuti, considera la possibilità di contribuire ai costi di hosting.</p>
+          <p className="support-lead">Tutti gli strumenti sono gratuiti, open source e realizzati senza pubblicità. I loro motori audio online comportano comunque costi reali di hosting. Se ti piace usarli, considera la possibilità di contribuire ai loro costi di hosting.</p>
           <div className="support-payment" aria-labelledby="support-amount-title">
             <p className="support-payment-label" id="support-amount-title">Scegli un importo una tantum</p>
             <div className="support-amounts">
