@@ -13,6 +13,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bassimatte.github.io/support/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bassimatte.github.io/it/support/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bassimatte.github.io/mantice/</loc>
     <lastmod>2026-08-23</lastmod>
   </url>

@@ -2,13 +2,27 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [english, italian, home, homeItalian, sitemap] = await Promise.all([
+const [english, italian, home, homeItalian, sitemap, staticEnglish, staticItalian, staticHome, staticHomeItalian, staticSitemap] = await Promise.all([
   readFile(new URL("../app/support/page.tsx", import.meta.url), "utf8"),
   readFile(new URL("../app/it/support/page.tsx", import.meta.url), "utf8"),
   readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
   readFile(new URL("../app/it/page.tsx", import.meta.url), "utf8"),
   readFile(new URL("../app/sitemap.ts", import.meta.url), "utf8"),
+  readFile(new URL("../support/index.html", import.meta.url), "utf8"),
+  readFile(new URL("../it/support/index.html", import.meta.url), "utf8"),
+  readFile(new URL("../index.html", import.meta.url), "utf8"),
+  readFile(new URL("../it/index.html", import.meta.url), "utf8"),
+  readFile(new URL("../sitemap.xml", import.meta.url), "utf8"),
 ]);
+
+test("GitHub Pages publishes the support routes and navigation", () => {
+  assert.match(staticEnglish, /Help keep the sound/);
+  assert.match(staticItalian, /Aiuta il suono a restare/);
+  assert.match(staticHome, /href="\/support\/">Support/);
+  assert.match(staticHomeItalian, /href="\/it\/support\/">Sostieni/);
+  assert.match(staticSitemap, /https:\/\/bassimatte\.github\.io\/support\//);
+  assert.match(staticSitemap, /https:\/\/bassimatte\.github\.io\/it\/support\//);
+});
 
 test("support pages keep the instruments free and explain server costs", () => {
   assert.match(english, /Free stays free/);
