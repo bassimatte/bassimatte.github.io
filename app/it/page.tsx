@@ -1,3 +1,5 @@
+import { AliseoHomeSection } from "../aliseo-components";
+
 const projects = [
   {
     number: "01",
@@ -170,6 +172,15 @@ const structuredData = {
       creator: { "@id": "https://bassimatte.github.io/#person" },
       description: project.description,
     })),
+    {
+      "@type": "SoftwareApplication",
+      name: "ALISEO",
+      url: "https://bassimatte.github.io/it/aliseo/",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "iPadOS 17 o successivo",
+      isAccessibleForFree: true,
+      creator: { "@id": "https://bassimatte.github.io/#person" },
+    },
   ],
 };
 
@@ -187,6 +198,7 @@ export default function HomeItaliano() {
         </a>
         <nav aria-label="Navigazione principale">
           <a href="#instruments">Strumenti</a>
+          <a href="#aliseo">Aliseo</a>
           <a href="#sounds">Suoni</a>
           <a href="#about">Chi sono</a>
           <a href="/it/support/">Sostieni</a>
@@ -266,10 +278,12 @@ export default function HomeItaliano() {
           </div>
         </section>
 
+        <AliseoHomeSection italian />
+
         <section className="sounds-section" id="sounds">
           <div className="sounds-orbit" aria-hidden="true"><span /><span /><span /><i /></div>
           <div className="sounds-copy">
-            <p className="section-number">02 — ARCHIVIO FREESOUND</p>
+            <p className="section-number">03 — ARCHIVIO FREESOUND</p>
             <h2>Un archivio aperto di texture sonore.</h2>
             <p>Registrazioni sul campo, suoni generati e frammenti del quotidiano trasformati — condivisi perché altri possano scoprirli, usarli e trasformarli ancora.</p>
             <div className="sound-topics" aria-label="Temi dell’archivio sonoro">
@@ -299,7 +313,7 @@ export default function HomeItaliano() {
         </section>
 
         <section className="about-section" id="about">
-          <p className="section-number">03 — CHI SONO</p>
+          <p className="section-number">04 — CHI SONO</p>
           <div className="about-grid">
             <h2>La curiosità è lo<span>strumento.</span></h2>
             <div className="about-copy">
@@ -316,7 +330,7 @@ export default function HomeItaliano() {
         </section>
 
         <section className="contact-section" id="contact">
-          <p className="section-number">04 — CONTATTI</p>
+          <p className="section-number">05 — CONTATTI</p>
           <div className="contact-grid">
             <div className="contact-copy">
               <h2>Scrivimi.</h2>

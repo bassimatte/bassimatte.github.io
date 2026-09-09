@@ -1,3 +1,5 @@
+import { AliseoHomeSection } from "./aliseo-components";
+
 const projects = [
   {
     number: "01",
@@ -170,6 +172,33 @@ const structuredData = {
       creator: { "@id": "https://bassimatte.github.io/#person" },
       description: project.description,
     })),
+    {
+      "@type": "SoftwareApplication",
+      name: "ALISEO",
+      url: "https://bassimatte.github.io/aliseo/",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "iPadOS 17 or later",
+      isAccessibleForFree: true,
+      creator: { "@id": "https://bassimatte.github.io/#person" },
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "ALISEO",
+      url: "https://bassimatte.github.io/aliseo/",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "iPadOS 17 or later",
+      isAccessibleForFree: true,
+      creator: { "@id": "https://bassimatte.github.io/#person" },
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "ALISEO",
+      url: "https://bassimatte.github.io/aliseo/",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "iPadOS 17 or later",
+      isAccessibleForFree: true,
+      creator: { "@id": "https://bassimatte.github.io/#person" },
+    },
   ],
 };
 
@@ -187,6 +216,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#instruments">Instruments</a>
+          <a href="#aliseo">Aliseo</a>
           <a href="#sounds">Sounds</a>
           <a href="#about">About</a>
           <a href="/support/">Support</a>
@@ -266,10 +296,12 @@ export default function Home() {
           </div>
         </section>
 
+        <AliseoHomeSection />
+
         <section className="sounds-section" id="sounds">
           <div className="sounds-orbit" aria-hidden="true"><span /><span /><span /><i /></div>
           <div className="sounds-copy">
-            <p className="section-number">02 — FREESOUND ARCHIVE</p>
+            <p className="section-number">03 — FREESOUND ARCHIVE</p>
             <h2>A public archive of texture.</h2>
             <p>Field recordings, generated sounds and transformed everyday moments—shared for other people to discover, use and reshape.</p>
             <div className="sound-topics" aria-label="Sound archive topics">
@@ -299,7 +331,7 @@ export default function Home() {
         </section>
 
         <section className="about-section" id="about">
-          <p className="section-number">03 — ABOUT</p>
+          <p className="section-number">04 — ABOUT</p>
           <div className="about-grid">
             <h2>Curiosity is the<span>instrument.</span></h2>
             <div className="about-copy">
@@ -316,7 +348,7 @@ export default function Home() {
         </section>
 
         <section className="contact-section" id="contact">
-          <p className="section-number">04 — CONTACT</p>
+          <p className="section-number">05 — CONTACT</p>
           <div className="contact-grid">
             <div className="contact-copy">
               <h2>Say hello.</h2>

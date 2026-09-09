@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Matteo Bassi (bassimat) — Strumenti generativi e trasformazione sonora",
-  description: "Strumenti generativi e trasformazione sonora sperimentale di Matteo Bassi (bassimat), creatore di Mantice, Glorb, Campana e Maresono.",
-  keywords: ["Matteo Bassi", "bassimat", "strumenti generativi", "sound design sperimentale", "trasformazione sonora", "sintesi audio", "Mantice", "Glorb", "Campana", "Maresono"],
+  description: "Strumenti generativi, trasformazione sonora sperimentale e ALISEO, un flusso di lavoro audio per iPad e Digitakt II, di Matteo Bassi (bassimat).",
+  keywords: ["Matteo Bassi", "bassimat", "strumenti generativi", "sound design sperimentale", "trasformazione sonora", "sintesi audio", "Mantice", "Glorb", "Campana", "Maresono", "ALISEO", "Digitakt II", "gestione campioni iPad"],
   alternates: {
     canonical: "/it/",
     languages: { en: "/", it: "/it/", "x-default": "/" },

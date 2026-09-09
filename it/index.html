@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matteo Bassi (bassimat) — Strumenti generativi e trasformazione sonora</title>
-  <meta name="description" content="Strumenti generativi e trasformazione sonora sperimentale di Matteo Bassi (bassimat), creatore di Mantice, Glorb, Campana e Maresono.">
-  <meta name="keywords" content="Matteo Bassi, bassimat, strumenti generativi, sound design sperimentale, trasformazione sonora, sintesi audio, Mantice, Glorb, Campana, Maresono">
+  <meta name="description" content="Strumenti generativi, trasformazione sonora sperimentale e ALISEO, un flusso di lavoro audio per iPad e Digitakt II, di Matteo Bassi (bassimat).">
+  <meta name="keywords" content="Matteo Bassi, bassimat, strumenti generativi, sound design sperimentale, trasformazione sonora, sintesi audio, Mantice, Glorb, Campana, Maresono, ALISEO, Digitakt II, gestione campioni iPad">
   <meta name="author" content="Matteo Bassi">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="pp3jhptIHkhnjku-p-0sm3J4XAJzQlE7WiNZ2JwKUNA">
@@ -15,6 +15,7 @@
   <link rel="alternate" hreflang="x-default" href="https://bassimatte.github.io/">
   <link rel="icon" type="image/png" href="/public/favicon-open-orbit.png">
   <link rel="stylesheet" href="/app/globals.css">
+  <link rel="stylesheet" href="/public/aliseo-home.css">
   <script src="/public/analytics.js" defer></script>
   <script src="/public/samples.js" defer></script>
   <meta property="og:type" content="website">
@@ -78,6 +79,15 @@
         "operatingSystem": "Web browser",
         "isAccessibleForFree": true,
         "creator": {"@id": "https://bassimatte.github.io/#person"}
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ALISEO",
+        "url": "https://bassimatte.github.io/it/aliseo/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "iPadOS 17 o successivo",
+        "isAccessibleForFree": true,
+        "creator": {"@id": "https://bassimatte.github.io/#person"}
       }
     ]
   }
@@ -93,7 +103,7 @@
       <span class="wordmark-mark">MB</span><span class="wordmark-handle">/ bassimat</span>
     </a>
     <nav aria-label="Navigazione principale">
-      <a href="#instruments">Strumenti</a><a href="#sounds">Suoni</a><a href="#about">Chi sono</a><a href="/it/support/">Sostieni</a><a href="#contact">Contatti</a>
+      <a href="#instruments">Strumenti</a><a href="#aliseo">Aliseo</a><a href="#sounds">Suoni</a><a href="#about">Chi sono</a><a href="/it/support/">Sostieni</a><a href="#contact">Contatti</a>
     </nav>
     <div class="language-switcher" aria-label="Selezione lingua"><a href="/" lang="en">EN</a><i aria-hidden="true">/</i><a class="active" href="/it/" lang="it" aria-current="page">IT</a></div>
   </header>
@@ -204,10 +214,34 @@
       </div>
     </section>
 
+    <section class="aliseo-home-section" id="aliseo">
+      <div class="aliseo-home-heading">
+        <p class="section-number">02 — FLUSSO DI LAVORO</p>
+        <div><p class="aliseo-home-status"><span></span>APP NATIVA PER IPAD · BETA PUBBLICA</p><h2>Aliseo<small>Porta con te i tuoi suoni.</small></h2></div>
+      </div>
+      <div class="aliseo-home-card">
+        <a class="aliseo-home-art" href="/it/aliseo/" data-aliseo-action="discover" aria-label="Scopri Aliseo">
+          <div class="aliseo-home-grid"></div>
+          <div class="aliseo-terminal aliseo-terminal-left"><span>IPAD</span><b>FILE</b><i></i><i></i></div>
+          <div class="aliseo-terminal aliseo-terminal-right"><span>DIGITAKT</span><b>+DRIVE</b><i></i><i></i></div>
+          <div class="aliseo-wind"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="aliseo-grains"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="aliseo-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="aliseo-art-label">SUONO IN TRANSITO / 01</p><p class="aliseo-rec"><span></span>REC / 24 BIT</p>
+        </a>
+        <div class="aliseo-home-copy">
+          <p>Uno spazio di lavoro nativo per iPad con cui preparare, trasferire, registrare e proteggere campioni tra iPad e Digitakt II, senza passare dal computer.</p>
+          <ol><li><b>01</b>Prepara</li><li><b>02</b>Trasferisci</li><li><b>03</b>Registra</li><li><b>04</b>Proteggi</li></ol>
+          <div class="aliseo-home-meta"><span>IPADOS 17+</span><span>DIGITAKT II</span></div>
+          <a class="aliseo-home-link" href="/it/aliseo/" data-aliseo-action="discover">Scopri Aliseo <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
     <section class="sounds-section" id="sounds">
       <div class="sounds-orbit" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
       <div class="sounds-copy">
-        <p class="section-number">02 — ARCHIVIO FREESOUND</p>
+        <p class="section-number">03 — ARCHIVIO FREESOUND</p>
         <h2>Un archivio aperto di texture sonore.</h2>
         <p>Registrazioni sul campo, suoni generati e frammenti del quotidiano trasformati — condivisi perché altri possano scoprirli, usarli e trasformarli ancora.</p>
         <div class="sound-topics" aria-label="Temi dell’archivio sonoro"><span>REGISTRAZIONI</span><span>AMBIENT</span><span>FOLEY</span><span>GENERATIVO</span><span>GRANULARE</span></div>
@@ -222,7 +256,7 @@
     </section>
 
     <section class="about-section" id="about">
-      <p class="section-number">03 — CHI SONO</p>
+      <p class="section-number">04 — CHI SONO</p>
       <div class="about-grid">
         <h2>La curiosità è lo<span>strumento.</span></h2>
         <div class="about-copy">
@@ -235,7 +269,7 @@
     </section>
 
     <section class="contact-section" id="contact">
-      <p class="section-number">04 — CONTATTI</p>
+      <p class="section-number">05 — CONTATTI</p>
       <div class="contact-grid">
         <div class="contact-copy">
           <h2>Scrivimi.</h2>

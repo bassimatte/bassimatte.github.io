@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matteo Bassi (bassimat) — Generative Instruments &amp; Sound Transformation</title>
-  <meta name="description" content="Generative instruments and experimental sound transformation by Matteo Bassi (bassimat), creator of Mantice, Glorb, Campana and Maresono.">
-  <meta name="keywords" content="Matteo Bassi, bassimat, generative instruments, experimental sound design, sound transformation, audio synthesis, Mantice, Glorb, Campana, Maresono">
+  <meta name="description" content="Generative instruments, experimental sound transformation and ALISEO, an iPad sound workflow for Digitakt II, by Matteo Bassi (bassimat).">
+  <meta name="keywords" content="Matteo Bassi, bassimat, generative instruments, experimental sound design, sound transformation, audio synthesis, Mantice, Glorb, Campana, Maresono, ALISEO, Digitakt II, iPad sample manager">
   <meta name="author" content="Matteo Bassi">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="pp3jhptIHkhnjku-p-0sm3J4XAJzQlE7WiNZ2JwKUNA">
@@ -15,6 +15,7 @@
   <link rel="alternate" hreflang="x-default" href="https://bassimatte.github.io/">
   <link rel="icon" type="image/png" href="/public/favicon-open-orbit.png">
   <link rel="stylesheet" href="/app/globals.css">
+  <link rel="stylesheet" href="/public/aliseo-home.css">
   <script src="/public/analytics.js" defer></script>
   <script src="/public/samples.js" defer></script>
   <meta property="og:type" content="website">
@@ -78,6 +79,15 @@
         "operatingSystem": "Web browser",
         "isAccessibleForFree": true,
         "creator": {"@id": "https://bassimatte.github.io/#person"}
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ALISEO",
+        "url": "https://bassimatte.github.io/aliseo/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "iPadOS 17 or later",
+        "isAccessibleForFree": true,
+        "creator": {"@id": "https://bassimatte.github.io/#person"}
       }
     ]
   }
@@ -93,7 +103,7 @@
       <span class="wordmark-mark">MB</span><span class="wordmark-handle">/ bassimat</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#instruments">Instruments</a><a href="#sounds">Sounds</a><a href="#about">About</a><a href="/support/">Support</a><a href="#contact">Contact</a>
+      <a href="#instruments">Instruments</a><a href="#aliseo">Aliseo</a><a href="#sounds">Sounds</a><a href="#about">About</a><a href="/support/">Support</a><a href="#contact">Contact</a>
     </nav>
     <div class="language-switcher" aria-label="Language selection"><a class="active" href="/" lang="en" aria-current="page">EN</a><i aria-hidden="true">/</i><a href="/it/" lang="it">IT</a></div>
   </header>
@@ -204,10 +214,34 @@
       </div>
     </section>
 
+    <section class="aliseo-home-section" id="aliseo">
+      <div class="aliseo-home-heading">
+        <p class="section-number">02 — SOUND WORKFLOW</p>
+        <div><p class="aliseo-home-status"><span></span>NATIVE IPAD APP · PUBLIC BETA</p><h2>Aliseo<small>Carry your sounds across.</small></h2></div>
+      </div>
+      <div class="aliseo-home-card">
+        <a class="aliseo-home-art" href="/aliseo/" data-aliseo-action="discover" aria-label="Discover Aliseo">
+          <div class="aliseo-home-grid"></div>
+          <div class="aliseo-terminal aliseo-terminal-left"><span>IPAD</span><b>FILES</b><i></i><i></i></div>
+          <div class="aliseo-terminal aliseo-terminal-right"><span>DIGITAKT</span><b>+DRIVE</b><i></i><i></i></div>
+          <div class="aliseo-wind"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="aliseo-grains"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="aliseo-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="aliseo-art-label">SOUND IN TRANSIT / 01</p><p class="aliseo-rec"><span></span>REC / 24 BIT</p>
+        </a>
+        <div class="aliseo-home-copy">
+          <p>A native iPad workspace for preparing, transferring, recording and protecting samples between iPad and Digitakt II—without returning to a computer.</p>
+          <ol><li><b>01</b>Prepare</li><li><b>02</b>Transfer</li><li><b>03</b>Record</li><li><b>04</b>Protect</li></ol>
+          <div class="aliseo-home-meta"><span>IPADOS 17+</span><span>DIGITAKT II</span></div>
+          <a class="aliseo-home-link" href="/aliseo/" data-aliseo-action="discover">Discover Aliseo <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
     <section class="sounds-section" id="sounds">
       <div class="sounds-orbit" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
       <div class="sounds-copy">
-        <p class="section-number">02 — FREESOUND ARCHIVE</p>
+        <p class="section-number">03 — FREESOUND ARCHIVE</p>
         <h2>A public archive of texture.</h2>
         <p>Field recordings, generated sounds and transformed everyday moments—shared for other people to discover, use and reshape.</p>
         <div class="sound-topics" aria-label="Sound archive topics"><span>FIELD RECORDING</span><span>AMBIENT</span><span>FOLEY</span><span>GENERATIVE</span><span>GRANULAR</span></div>
@@ -222,7 +256,7 @@
     </section>
 
     <section class="about-section" id="about">
-      <p class="section-number">03 — ABOUT</p>
+      <p class="section-number">04 — ABOUT</p>
       <div class="about-grid">
         <h2>Curiosity is the<span>instrument.</span></h2>
         <div class="about-copy">
@@ -235,7 +269,7 @@
     </section>
 
     <section class="contact-section" id="contact">
-      <p class="section-number">04 — CONTACT</p>
+      <p class="section-number">05 — CONTACT</p>
       <div class="contact-grid">
         <div class="contact-copy">
           <h2>Say hello.</h2>

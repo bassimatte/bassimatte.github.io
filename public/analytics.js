@@ -42,6 +42,16 @@
     }
 
     const url = new URL(element.href, window.location.href);
+    const aliseoAction = element.dataset.aliseoAction;
+    if (aliseoAction === 'discover') {
+      track('aliseo_opened', { placement });
+      return;
+    }
+    if (aliseoAction === 'testflight' || aliseoAction === 'discussion') {
+      track('aliseo_beta_opened', { destination: aliseoAction, placement });
+      return;
+    }
+
     if (element.matches('[data-support-checkout="paypal"]')) {
       track('support_checkout_opened', {
         provider: 'paypal',
@@ -99,7 +109,7 @@
       });
     }, { threshold: [0.35] });
 
-    document.querySelectorAll('#instruments, #sounds, #about, #contact').forEach(function (section) {
+    document.querySelectorAll('#instruments, #aliseo, #sounds, #about, #contact, #workflow, #details, #beta').forEach(function (section) {
       observer.observe(section);
     });
   }
