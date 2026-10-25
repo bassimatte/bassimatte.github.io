@@ -60,6 +60,19 @@ const projects = [
     sampleNames: ["onda_lunga"],
     sampleGainsDb: [0],
   },
+  {
+    number: "05",
+    name: "Filigrana",
+    kicker: "Turn drawings into music",
+    description: "A browser instrument that follows the ink in a drawing and sends three independent travellers along its paths, weaving gentle generative melodies.",
+    tags: ["Drawing", "Generative", "Three voices"],
+    accent: "sage",
+    live: "https://bassimatte.github.io/filigrana/",
+    code: "https://github.com/bassimatte/filigrana",
+    samples: ["/audio/filigrana-sample.mp3"],
+    sampleNames: ["calm_trio"],
+    sampleGainsDb: [0],
+  },
 ];
 
 const archiveSounds = [
@@ -103,7 +116,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
 
   return (
     <div className={`project-art art-${key}`} aria-hidden="true">
-      <span className="art-number">{number} / 04</span>
+      <span className="art-number">{number} / 05</span>
       {key === "mantice" && (
         <>
           <div className="mantice-waves"><span /><span /><span /><span /></div>
@@ -136,6 +149,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
           <span className="art-caption">SPECTRUM / TIDE</span>
         </>
       )}
+      {key === "filigrana" && (<><div className="filigrana-paths">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</div><div className="filigrana-travellers"><i className="traveller-one" /><i className="traveller-two" /><i className="traveller-three" /></div><span className="art-caption">INK / PATH / MELODY</span></>)}
     </div>
   );
 }
@@ -244,12 +258,13 @@ export default function Home() {
           </div>
 
           <div className="project-index" aria-label="Featured projects">
-            <span>FOUR INSTRUMENTS</span>
+            <span>FIVE INSTRUMENTS</span>
             <ol>
               <li><a href="#mantice"><b>01</b> Mantice</a></li>
               <li><a href="#glorb"><b>02</b> Glorb</a></li>
               <li><a href="#campana"><b>03</b> Campana</a></li>
               <li><a href="#maresono"><b>04</b> Maresono</a></li>
+              <li><a href="#filigrana"><b>05</b> Filigrana</a></li>
             </ol>
           </div>
         </section>
@@ -257,8 +272,8 @@ export default function Home() {
         <section className="projects-section" id="instruments">
           <div className="section-heading">
             <p className="section-number">01 — INSTRUMENTS</p>
-            <h2>Four ways into sound.</h2>
-            <p>Each instrument begins with a different question. All four are free, open source and ready to play in your browser.</p>
+            <h2>Five ways into sound.</h2>
+            <p>Each instrument begins with a different question. All five are free and ready to play in your browser.</p>
           </div>
 
           <div className="projects-grid">

@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://bassimatte.github.io"),
   title: "Matteo Bassi (bassimat) — Generative Instruments & Sound Transformation",
-  description: "Generative instruments, experimental sound transformation and ALISEO, an iPad sound workflow for Digitakt II, by Matteo Bassi (bassimat).",
-  keywords: ["Matteo Bassi", "bassimat", "generative instruments", "experimental sound design", "sound transformation", "audio synthesis", "Mantice", "Glorb", "Campana", "Maresono", "ALISEO", "Digitakt II", "iPad sample manager"],
+  description: "Generative instruments, experimental sound transformation, Filigrana and ALISEO by Matteo Bassi (bassimat).",
+  keywords: ["Matteo Bassi", "bassimat", "generative instruments", "experimental sound design", "sound transformation", "drawing to music", "Filigrana", "audio synthesis", "Mantice", "Glorb", "Campana", "Maresono", "ALISEO", "Digitakt II", "iPad sample manager"],
   authors: [{ name: "Matteo Bassi", url: "https://bassimatte.github.io/" }],
   creator: "Matteo Bassi",
   verification: {

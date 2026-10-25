@@ -12,7 +12,7 @@ const analytics = await readFile(
 test("classifies every portfolio instrument as a project", () => {
   const projectList = analytics.match(/const PORTFOLIO_PROJECTS = \[(.*?)\]/s)?.[1] ?? "";
 
-  for (const project of ["mantice", "glorb", "campana", "maresono"]) {
+  for (const project of ["mantice", "glorb", "campana", "maresono", "filigrana"]) {
     assert.match(projectList, new RegExp(`['\"]${project}['\"]`));
   }
 });

@@ -6,7 +6,7 @@
   const PORTFOLIO_ANALYTICS_EVENT_PREFIX = 'portfolio_';
   const PORTFOLIO_UMAMI_WEBSITE_ID = 'b2300e0b-bc69-49d7-ad05-06f980b5ed38';
   const PORTFOLIO_UMAMI_SCRIPT_URL = 'https://cloud.umami.is/script.js';
-  const PORTFOLIO_PROJECTS = ['mantice', 'glorb', 'campana', 'maresono'];
+  const PORTFOLIO_PROJECTS = ['mantice', 'glorb', 'campana', 'maresono', 'filigrana'];
 
   if (window.location.hostname !== PORTFOLIO_ANALYTICS_HOST) return;
 

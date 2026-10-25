@@ -60,6 +60,19 @@ const projects = [
     sampleNames: ["onda_lunga"],
     sampleGainsDb: [0],
   },
+  {
+    number: "05",
+    name: "Filigrana",
+    kicker: "Trasforma i disegni in musica",
+    description: "Uno strumento da browser che segue l’inchiostro di un disegno e affida i suoi percorsi a tre viaggiatori indipendenti, intrecciando delicate melodie generative.",
+    tags: ["Disegno", "Generativo", "Tre voci"],
+    accent: "sage",
+    live: "https://bassimatte.github.io/filigrana/",
+    code: "https://github.com/bassimatte/filigrana",
+    samples: ["/audio/filigrana-sample.mp3"],
+    sampleNames: ["calm_trio"],
+    sampleGainsDb: [0],
+  },
 ];
 
 const archiveSounds = [
@@ -103,7 +116,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
 
   return (
     <div className={`project-art art-${key}`} aria-hidden="true">
-      <span className="art-number">{number} / 04</span>
+      <span className="art-number">{number} / 05</span>
       {key === "mantice" && (
         <>
           <div className="mantice-waves"><span /><span /><span /><span /></div>
@@ -136,6 +149,7 @@ function ProjectArt({ name, number }: { name: string; number: string }) {
           <span className="art-caption">SPETTRO / MAREA</span>
         </>
       )}
+      {key === "filigrana" && (<><div className="filigrana-paths">{Array.from({ length: 7 }, (_, index) => <i key={index} />)}</div><div className="filigrana-travellers"><i className="traveller-one" /><i className="traveller-two" /><i className="traveller-three" /></div><span className="art-caption">SEGNO / PERCORSO / MELODIA</span></>)}
     </div>
   );
 }
@@ -226,12 +240,13 @@ export default function HomeItaliano() {
           </div>
 
           <div className="project-index" aria-label="Progetti in evidenza">
-            <span>QUATTRO STRUMENTI</span>
+            <span>CINQUE STRUMENTI</span>
             <ol>
               <li><a href="#mantice"><b>01</b> Mantice</a></li>
               <li><a href="#glorb"><b>02</b> Glorb</a></li>
               <li><a href="#campana"><b>03</b> Campana</a></li>
               <li><a href="#maresono"><b>04</b> Maresono</a></li>
+              <li><a href="#filigrana"><b>05</b> Filigrana</a></li>
             </ol>
           </div>
         </section>
@@ -239,8 +254,8 @@ export default function HomeItaliano() {
         <section className="projects-section" id="instruments">
           <div className="section-heading">
             <p className="section-number">01 — STRUMENTI</p>
-            <h2>Quattro vie attraverso il suono.</h2>
-            <p>Ogni strumento nasce da una domanda diversa. Tutti e quattro sono gratuiti, open source e pronti da suonare nel browser.</p>
+            <h2>Cinque vie attraverso il suono.</h2>
+            <p>Ogni strumento nasce da una domanda diversa. Tutti e cinque sono gratuiti e pronti da suonare nel browser.</p>
           </div>
 
           <div className="projects-grid">
